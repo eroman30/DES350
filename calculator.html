@@ -5,7 +5,98 @@
 <title>calculator</title>
 </head>
 
+	<style>
+	
+		
+		body{
+			background-color: #A8A8A8;
+			margin: 0;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+	
+		
+/*		DISPLAY*/
+	
+			#display{
+			width: 392px;
+			height: 100px;
+			text-align: right;
+			background-color: grey;
+			font-size: 60px;
+			font-weight:200;
+			border:none;
+			
+		}
+		
+		
+		#myCalculator{
+			margin-left: calc(50% - 146px);
+			
+		}
+		
+		
+/*		NUMBER STYLES*/
+		
+		.number{
+			width: 75px;
+			height: 75px;
+			background-color: #A8A8A8;
+			border: none;
+			font-size: 15px;
+			font-weight: 200
+		}
+		
+		
+		
+		.number:hover{
+			background-color: #D2D1D1;
+		}
+		
+		
+/*		OPERATOR STYLES*/
+		
+		
+		.operator{
+			width: 75px;
+			height: 72px;
+			background-color: #FC7D7F;
+			border: none;
+			font-size: 15px;
+			font-weight: 300;
+		}
+		
+		.operator:hover{
+			background-color:#E79394;
+		}
+		
+		
+		
+		.equals{
+			width: 154px;
+			height: 67px;
+			background-color: #FC7D7F;
+			border: none;
+			font-size: 20px;
+			font-weight: 200;
+			
+		}
+		
+		
+		.equals:hover{
+			background-color:#E79394;
+		}
+		
+		
+	</style>
+	
+	
+	
+	
+	
 <body>
+	
+<!--	START OF CALCUATOR HTML-->
+	
 	<form name="calculator">
 		
 	<div id="myCalculator">
@@ -33,7 +124,7 @@
 		<input type="button" class="number" value="7" onclick="calculator.display.value +='7'">	
 		<input type="button" class="number" value="8" onclick="calculator.display.value +='8'">	
 		<input type="button" class="number" value="9" onclick="calculator.display.value +='9'">
-		<input type="button" class="operator" name="equals" value="equals" onclick="calculator.display.value = eval(calculator.display.value)">
+		<input type="button" class="equals" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
 		</div>
 		
 		<div class="inputRow">
