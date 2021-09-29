@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Neville Brody Calculator</title>
+</head>
+
+	<style>
+	
+		
+		body{
+			background-color: #121212;
+			margin: 0;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			padding-top: 20px;
+		}
+	
+		
+/*		DISPLAY*/
+	
+			#display{
+			width: 400px;
+			height: 410px;
+			text-align: right;
+			background-color: #121212;
+			font-size: 140px;
+		
+			font-weight:100;
+			float: left;
+			color: red;
+			text-align:left;
+			border-color: #272727;
+			margin-left: 100px;
+			margin-top: 95px}
+		
+	
+		
+		
+/*		NUMBER STYLES*/
+		.firstSquare{background: #121212;
+			padding: 20px;
+			margin: 10px;
+			width: 205px;
+			height: 205px;
+			position: fixed;
+			padding-left: 300px;
+			margin-left: 506px;
+			padding-top: 191px;
+			margin-top: 95px
+		}
+		
+		.one {height: 55px;
+			background-color: transparent;
+			border: none;
+			font-size: 50px;
+			font-weight: 600;
+			color: white;
+			margin-top: 100px;
+			margin-left: 40px;
+			position: fixed
+		}
+		.one:hover{
+			font-size: 55px;
+		}
+		.two{
+			background-color: transparent;
+			border: none;
+			font-size: 140px;
+			font-weight: 800;
+			color: white;
+			position: fixed;
+			margin-left: 140px;
+			margin-top: 90px}
+		.two:hover{
+			font-size: 145px;
+		}
+	
+		.three
+			{background-color: transparent;
+			border: none;
+			font-size: 060px;
+			font-weight: 500;
+			color: white;
+			position: fixed;
+			margin-left: 210px;
+			margin-top: 90px}
+		
+		.three:hover{
+			font-size: 65px;
+		}
+		
+		.four
+			{background-color: transparent;
+			border: none;
+			font-size: 120px;
+			font-weight: 800;
+			color: white;
+			position: fixed;
+			margin-left: 25px;
+			margin-top: 214px}
+		
+		.four:hover{
+			font-size: 125px;
+		}
+		
+		.five
+			{background-color: transparent;
+			border: none;
+			font-size: 075px;
+			font-weight: 800;
+			color: white;
+			position: fixed;
+			margin-left: 85px;
+			margin-top: 225px}
+		
+		.five:hover{
+			font-size: 80px;
+		}
+		
+		.six	{background-color: transparent;
+			border: none;
+			font-size: 075px;
+			font-weight: 800;
+			color: white;
+			position: fixed;
+			margin-left:122px;
+			margin-top: 225px}
+		
+		.six:hover{
+			font-size: 80px;
+		}
+
+		.seven	{
+			background-color: transparent;
+			border: none;
+			font-size: 130px;
+			font-weight: 200;
+			color: white;
+			position: fixed;
+			margin-left: 52px;
+			margin-top: 310px}
+		
+		.seven:hover{
+			font-size: 135px;
+		}
+		
+		
+		.eight
+			{background-color: transparent;
+			border: none;
+			font-size: 130px;
+			font-weight: 900;
+			color: white;
+			position: fixed;
+			margin-left: 95px;
+			margin-top: 310px}
+		
+		.eight:hover{
+			font-size: 135px;
+		}
+		
+		
+		.nine
+			{background-color: transparent;
+			border: none;
+				height: 200px;
+			font-size: 180px;
+			font-weight: 800;
+			color: white;
+			position: fixed;
+			margin-left: 160px;
+			margin-top: 260px}
+		
+		.nine:hover{
+			font-size: 185px;
+		}
+		
+		.zero {background-color: transparent;
+			border: none;
+			font-size: 70px;
+			font-weight: 800;
+			color: white;
+			position: fixed;
+			margin-left: 110px;
+			margin-top: 430px}
+		
+		.zero:hover{
+			font-size: 75px;
+		}
+		
+		.period{background-color: transparent;
+			border: none;
+			font-size: 70px;
+			font-weight: 800;
+			color: white;
+			position: fixed;
+			margin-left: 50px;
+			margin-top: 425px}
+		
+		.period:hover{
+			font-size: 75px;
+		}
+			
+		
+		
+		
+		
+/*		OPERATOR STYLES*/
+		
+		
+		.operator{
+			width: 75px;
+			height: 72px;
+			background-color: #121212;
+			border: none;
+			font-size: 50px;
+			font-weight: 300;
+			color: red;
+		
+		}
+		
+		.operator:hover{
+			background-color:#E79394;
+		}
+		
+		
+		
+		.equals{
+			width: 154px;
+			height: 67px;
+			background-color: transparent;
+			border: none;
+			font-size: 50px;
+			font-weight: 200;
+			color: red;
+			position: fixed;
+			margin-left: 320px;
+			margin-top: 400px
+			
+		}
+		
+		.add{
+			width: 154px;
+			height: 67px;
+			background-color: transparent;
+			border: none;
+			font-size: 50px;
+			font-weight: 200;
+			color: red;
+			position: fixed;
+			margin-left: 275px;
+			margin-top: 150px
+			
+		}
+		
+		.subtract{
+			width: 154px;
+			height: 67px;
+			background-color: transparent;
+			border: none;
+			font-size: 50px;
+			font-weight: 200;
+			color: red;
+			position: fixed;
+			margin-left: 360px;
+			margin-top: 150px
+			
+		}
+		
+		.multiply{
+			width: 154px;
+			height: 67px;
+			background-color: transparent;
+			border: none;
+			font-size: 50px;
+			font-weight: 200;
+			color: red;
+			position: fixed;
+			margin-left: 275px;
+			margin-top: 300px
+			
+		}
+		
+		.divide{
+			width: 154px;
+			height: 67px;
+			background-color: transparent;
+			border: none;
+			font-size: 50px;
+			font-weight: 200;
+			color: red;
+			position: fixed;
+			margin-left: 360px;
+			margin-top: 280px
+			
+		}
+		
+		.clear{
+			width: 154px;
+		
+			background-color: transparent;
+			border: none;
+			font-size: 70px;
+			font-weight: 400;
+			color: red;
+			position: fixed;
+			margin-left: 150px;
+			margin-top: 430px
+			
+		}
+		
+		.clear:hover{
+			font-size: 80px;
+		}
+		
+		.equals:hover{
+			font-size: 60px;
+			font-weight: 300;
+		}
+		
+		.multiply:hover{
+			font-size: 60px;
+			font-weight: 300;
+		}
+		
+		.add:hover{
+			font-size: 60px;
+			font-weight: 300;
+		}
+		
+		.subtract:hover{
+			font-size: 60px;
+			font-weight: 300;
+		}
+		
+		.divide:hover{
+			font-size: 60px;
+			font-weight: 300;
+		}
+	</style>
+	
+	
+	
+	
+	
+<body>
+	
+<!--	START OF CALCUATOR HTML-->
+	
+	<form name="calculator">
+		
+	<div id="myCalculator">
+		
+	<div id="top_display">
+		<input type="text" name="display" id="display" disabled>
+		<div class="firstSquare">&nbsp;</div>
+	
+		<input type="button" class="one" value="1" onclick="calculator.display.value +='1'">	
+		<input type="button" class="two" value="2" onclick="calculator.display.value +='2'">	
+		<input type="button" class="three" value="3" onclick="calculator.display.value +='3'">
+	
+		
+	
+		<input type="button" class="four" value="4" onclick="calculator.display.value +='4'">
+		<input type="button" class="five" value="5" onclick="calculator.display.value +='5'">
+		<input type="button" class="six" value="6" onclick="calculator.display.value +='6'">
+		
+		
+	
+		<input type="button" class="seven" value="7" onclick="calculator.display.value +='7'">	
+		<input type="button" class="eight" value="8" onclick="calculator.display.value +='8'">	
+		<input type="button" class="nine" value="9" onclick="calculator.display.value +='9'">
+		
+		
+		<input type="button" class="period" value="." onclick="calculator.display.value +='.'">	
+		<input type="button" class="zero" value="0" onclick="calculator.display.value +='0'">	
+		
+		
+		<input type="button" class="multiply" name="multiply" value="*" onclick="calculator.display.value +='*'">
+		<input type="button" class="divide" name="divide" value="/" onclick="calculator.display.value +='/'">
+	
+		<input type="button" class="add" name="add" value="+" onclick="calculator.display.value +='+'">
+		<input type="button" class="subtract" name="subtract" value="-" onclick="calculator.display.value +='-'">
+	
+		<input type="button" class="clear" name="clear" value="C" onclick="calculator.display.value =''">
+	<input type="button" class="equals" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+		
+		
+		</div>
+		
+	</div>
+		
+	</form>
+</body>
+</html>
