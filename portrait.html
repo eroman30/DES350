@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portrait</title>
+	
+	<style>
+		.head{
+     		 display: block;
+     		 width: 420px;
+      		height: 600px;
+      		background-color: #D5A475;
+      		border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+			 transform: rotate(180deg);
+			position: absolute;
+			margin-left: 400px;
+			margin-top: 60px
+    }
+			
+		.bordercirlce{
+   			background-color:transparent;
+    		border:40px solid black;    
+    		height:350px;
+    		border-radius:50%;
+    		border-radius:50%;
+			border-radius:50%;
+    		width: 340px;
+			position: absolute;
+			margin-left: 400px;
+			margin-top: 60px
+			
+}
+	
+
+ 
+		
+		.oval {
+      		height: 180px;
+ 			 width: 320px;
+  			background-color: black;
+  			border-radius: 50%;
+			margin-left: 450px;
+			position: absolute;
+			margin-top: 70px}
+		
+		.lining{
+  			width: 300px;
+  			height: 100px;
+  			background:#D5A475;
+			position: absolute;
+			margin-top: 165px;
+			margin-left: 470px
+}
+  
+		.bigsquare	{
+  			width: 348px;
+  			height: 270px;
+  			background:#D5A475;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 440px}
+		
+	.lefttriangle  {
+      width: 0;
+      height: 0;
+      border-bottom: 90px solid black;
+      border-left: 70px solid transparent;
+		position: absolute;
+		margin-left: 400px;
+		margin-top: 155px
+    }
+		
+		.righttriangle {
+      width: 0;
+      height: 0;
+      border-bottom: 105px solid black;
+      border-right: 60px solid transparent;
+			position: absolute;
+		margin-left: 755px;
+		margin-top: 139px
+    }
+  
+		.leftear{
+      	width: 80px;
+      	height: 150px;
+     	background: #D5A475;
+      	border-radius: 050%;
+		position: absolute;
+		margin-top: 295px;
+		margin-left: 370px;
+			 transform: rotate(-3deg);
+  }
+		.rightear{
+      	width: 80px;
+      	height: 150px;
+      	background: #D5A475;
+      	border-radius: 050%;
+		position: absolute;
+		margin-top: 295px;
+		margin-left:780px;
+			 transform: rotate(3deg);
+    }
+		
+		.lefteye{
+		width: 95px;
+  		height: 70px;
+  		background: white;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 483px;
+		margin-top: 320px;
+		}
+		
+		.righteye{
+		width: 95px;
+  		height: 70px;
+  		background: white;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 653px;
+		margin-top: 320px;
+		}
+		
+		.goatee{
+		width: 220px;
+  		height: 100px;
+  		background: black;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 500px;
+		margin-top: 560px;
+		}
+		
+		.goateesquare{
+  			width: 230px;
+  			height: 100px;
+  			background:#D5A475;
+			position: absolute;
+			margin-top: 500px;
+			margin-left: 495px
+}
+		
+		.goateecircle1{
+		width: 100px;
+  		height: 70px;
+  		background: #D5A475;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 612px;
+		margin-top: 542px;
+		}
+		
+		.goateecircle2{
+		width: 100px;
+  		height: 70px;
+  		background: #D5A475;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 510px;
+		margin-top: 542px;
+		}
+		
+		.leftpupil{
+		width: 60px;
+  		height: 60px;
+  		background: black;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 501px;
+		margin-top: 325px;
+		}
+			.rightpupil{
+		width: 60px;
+  		height: 60px;
+  		background: black;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 671px;
+		margin-top: 325px;
+		}
+		
+		.lefteyedetail{
+		width: 10px;
+  		height: 10px;
+  		background: white;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 705px;
+		margin-top: 335px;
+		}
+		
+		.righteyedetail{
+		width: 10px;
+  		height: 10px;
+  		background: white;
+  		border-radius: 50%;
+		position: absolute;
+		margin-left: 535px;
+		margin-top: 335px;
+		}
+		.eyebrow{
+    		width: 90px;
+    		height: 24px;
+			border-radius: 40px 40px 40px 40px;
+			background-color: black;
+			position: absolute;
+			margin-top: 280px;
+			margin-left: 485px}
+		
+			.righteyebrow{
+    		width: 90px;
+    		height: 24px;
+			border-radius: 40px 40px 40px 40px;
+			background-color: black;
+			position: absolute;
+			margin-top: 280px;
+			margin-left: 655px}
+		
+		.eyebrowtriangle{
+      		width: 0;
+      		height: 0;
+     		border-top: 23px solid black;
+      		border-right: 30px solid transparent;
+			position: absolute;
+			margin-top: 285px;
+			margin-left: 464px;
+			 transform: rotate(165deg);
+    }
+		
+		.righteyebrowtriangle{
+     		 width: 0;
+      		height: 0;
+      		border-top: 25px solid black;
+      		border-right: 30px solid transparent;
+			position: absolute;
+			margin-top: 293px;
+			margin-left: 727px;
+			 transform: rotate(55deg);
+    }
+		.sideburncover{
+			width: 30px;
+			height: 80px;
+			background-color: #D5A475;
+			margin-left: 415px;
+			margin-top: 250px;
+			position: absolute;
+		}
+		
+			.sideburn{
+  			width: 130px;
+  			height: 130px;
+  			position: absolute;
+  			clip: rect(auto, 180px, auto, 100px);
+  			transform: rotate(225deg);
+			margin-left: 396px;
+			margin-top: 238px
+}
+
+		
+		.sideburn:after {
+  			content: "";
+  			position: absolute;
+  			top: 7px;
+  			bottom: 7px;
+  			left: 7px;
+  			right: 7px;
+  			background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #D5A475), color-stop(100%, black));
+  			transform: rotate(-45deg);
+}
+				
+				
+		.rightsideburn{
+			position: absolute;
+  			width: 170px;
+  			height: 130px;
+  			clip: rect(auto, 180px, auto, 100px);
+  			transform: rotate(-180deg);
+			margin-left: 748px;
+			margin-top: 237px
+}
+		
+		.rightsideburn:after {
+  			content: "";
+  			position: absolute;
+  			top: 7px;
+  			bottom: 7px;
+  			left: 7px;
+ 			right: 7px;
+  			background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #D5A475), color-stop(100%, black));
+
+}
+		.liningtriangle{
+ 			 width: 50px;
+  			height: 100px;
+  			background: #D5A475;
+    		transform: rotate(-45deg);
+			margin-left: 747px;
+			margin-top: 247px;
+			position: absolute;
+		}
+		
+		.nose {
+    		height: 40px;
+    		width: 65px;
+    		border-radius: 50%;
+    		border: 6px solid black;
+    		opacity: 60%;
+    		position: fixed; 
+    		top: 441px;
+    		left: 585px;
+			position: absolute;
+}
+         
+		.nosesquare{
+  			width: 90px;
+  			height: 50px;
+  			background:#D5A475;
+			position: absolute;
+			margin-top: 415px;
+			margin-left: 570px}
+		
+		.mouth{
+    		border-radius: 40px 40px 40px 40px;
+    		width: 135px;
+    		height: 20px;
+    		background-color: #BA6B4C;
+			position: absolute;
+			left:550px;
+			top: 540px
+}
+    
+	</style>
+</head>
+
+<body>
+	<div class="head"></div>
+	<div class="bordercirlce"></div>
+	<div class ="crescent"> </div>
+	<div class ="oval"> </div>
+	<div class ="lining"> </div>
+	<div class ="bigsquare"> </div>
+	<div class ="lefttriangle"> </div>
+	<div class ="righttriangle"> </div>
+	<div class ="leftear"> </div>
+	<div class ="rightear"> </div>
+	<div class ="righteye"> </div>
+	<div class ="lefteye"> </div>
+	<div class ="goatee"> </div>
+	<div class ="goateesquare"> </div>
+	<div class ="goateecircle1"> </div>
+	<div class ="goateecircle2"> </div>
+	<div class ="leftpupil"> </div>
+	<div class ="rightpupil"> </div>
+	<div class ="lefteyedetail"> </div>
+	<div class ="righteyedetail"> </div>
+	<div class ="eyebrow"> </div>
+	<div class ="eyebrowtriangle"> </div>
+	<div class ="sideburncover"> </div>
+	<div class ="sideburn"> </div>
+	<div class ="rightsideburn"> </div>
+	<div class ="liningtriangle"> </div>
+	<div class ="righteyebrow"> </div>
+	<div class ="righteyebrowtriangle"> </div>
+	<div class ="nose"> </div>
+	<div class ="nosesquare"> </div>
+	<div class ="mouth"> </div>
+</body>
+</html>
