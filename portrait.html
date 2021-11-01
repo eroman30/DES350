@@ -64,9 +64,9 @@
       width: 0;
       height: 0;
       border-bottom: 90px solid black;
-      border-left: 70px solid transparent;
+      border-left: 65px solid transparent;
 		position: absolute;
-		margin-left: 400px;
+		margin-left: 405px;
 		margin-top: 155px
     }
 		
@@ -168,6 +168,44 @@
 		position: absolute;
 		margin-left: 501px;
 		margin-top: 325px;
+			
+			animation-name: move;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;}
+		
+		@-webkit-keyframes move{
+			0% {
+				top:10px;
+				left: 10px;
+			}
+			
+			25%{
+				top:10px;
+				left: 20px;
+			}
+			
+			50%{
+				top:10px;
+				left: 10px;
+				border-radius: 100px;
+				background-color: black;
+			}
+			
+			75%{
+				top:10px;
+				left: 0px;
+				border-radius: 100px;
+				background-color: black;
+			}
+			
+			100%{
+				top: 10px;
+				left: 10px;
+				border-radius: 100px;
+				background-color: black;
+				
+		}
 		}
 			.rightpupil{
 		width: 60px;
@@ -177,8 +215,45 @@
 		position: absolute;
 		margin-left: 671px;
 		margin-top: 325px;
-		}
+				
+		animation-name: move;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;}
 		
+		@-webkit-keyframes move{
+			0% {
+				top:10px;
+				left: 10px;
+			}
+			
+			25%{
+				top:10px;
+				left: 20px;
+			}
+			
+			50%{
+				top:10px;
+				left: 10px;
+				border-radius: 100px;
+				background-color: black;
+			}
+			
+			75%{
+				top:10px;
+				left: 0px;
+				border-radius: 100px;
+				background-color: black;
+			}
+			
+			100%{
+				top: 10px;
+				left: 10px;
+				border-radius: 100px;
+				background-color: black;
+				
+		}
+		}
 		.lefteyedetail{
 		width: 10px;
   		height: 10px;
@@ -187,6 +262,8 @@
 		position: absolute;
 		margin-left: 705px;
 		margin-top: 335px;
+			
+			
 		}
 		
 		.righteyedetail{
@@ -276,7 +353,7 @@
   			clip: rect(auto, 180px, auto, 100px);
   			transform: rotate(-180deg);
 			margin-left: 748px;
-			margin-top: 237px
+			margin-top: 236px
 }
 		
 		.rightsideburn:after {
