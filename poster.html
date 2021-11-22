@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Great Smoky Mountains Poster</title>
+<style>
+body {background-color: #333;
+margin: 0px;
+padding: 0px;
+}
+    .card {
+position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+width: 40%;
+        height: 90vh;
+        background: url("GreatSmokeyMountainsPoster.jpg") no-repeat center;
+background-size: contain;
+    }
+    .card:hover {
+        background: url("GreatSmokeyMountainsPoster_1_1.gif") no-repeat center;
+background-size: contain;
+    }
+#preload {
+background: url("GreatSmokeyMountainsPoster_1_1.gif") no-repeat -9999px -9999px;
+}
+</style>
+</head>
+
+<body>
+<div id="preload"></div>
+<div class="card"></div>
+</body>
+</html>
